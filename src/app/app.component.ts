@@ -10,10 +10,10 @@ export class AppComponent {
   userName: string = "";
   response: any;
 
-  constructor(private http: HttpClient) {
+  constructor(private https: HttpClient) {
   }
   search() {
-    this.http.get(`https://api.github.com/users/${this.userName}/followers`)
+    this.https.get(`https://api.github.com/users/${this.userName}/followers`)
       .subscribe((response) => {
         this.response = response;
       })
