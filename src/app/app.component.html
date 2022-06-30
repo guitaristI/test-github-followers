@@ -1,0 +1,18 @@
+<div class="block">
+  <input placeholder="Enter github user here..." class="block__input" type="text" [(ngModel)]="userName">
+  <button class="block__btn" (click)="search()">Get followers</button>
+  <div *ngIf="response" class="block__users users">
+    <div *ngFor="let user of response" class="users__user">
+      <div class="users__user-img">
+        <img src="{{user.avatar_url}}}" alt="">
+      </div>
+      <div class="users__user-info">
+        <div class="users__user-login">{{user.login}}</div>
+        <a target="_blank" href="{{user.html_url}}">{{user.html_url}}</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+

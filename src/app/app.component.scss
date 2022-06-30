@@ -1,0 +1,43 @@
+.block {
+    padding: 30px;
+    &__input{
+      border: 1px solid rgba(0, 0, 0, 0.38);
+      border-radius: 10%;
+      margin-right: 10px;
+      padding: 2px;
+    }
+    &__btn{
+      background-color: #fff;
+      border: 1px solid rgba(0, 0, 0, 0.38);
+      border-radius: 10%;
+      padding: 2px;
+    }
+  }
+  .users {
+    padding-top: 30px;
+    &__user {
+      display: flex;
+      margin-bottom: 20px;
+    }
+  
+    &__user-img {
+      margin-right: 20px;
+    }
+    &__user-img img{
+      max-width: 100px;
+      border-radius: 50%;
+    }
+  
+    &__user-info {
+    }
+  
+    &__user-login {
+      font-weight: bold;
+      font-size: 25px;
+      margin-bottom: 20px;
+    }
+  
+    &__user-link {
+    }
+  }
+  
